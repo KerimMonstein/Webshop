@@ -3,8 +3,8 @@ $(document).ready(function () {
 
     if (window.location.href.indexOf('#productModal') > -1) {
         var url = window.location.href;
-        var id = url.split('#')[3]
-        changeModal("Dumbbell_7,5_Kg");
+        var id = url.split('#')[2].split('%20')[2];
+        changeModal(id);
     }
 });
 

@@ -130,9 +130,9 @@
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <li><a href="index.php" class="nav-link px-2 activeSite">Home</a></li>
                         <li><a href="Equipment.php" class="nav-link px-2 navText">Equipment</a></li>
-                        <li><a href="Accesoires.html" class="nav-link px-2 navText">Accessoirs</a></li>
-                        <li><a href="Nutrition.html" class="nav-link px-2 navText">Nutrition</a></li>
-                        <li><a href="checkout.html" class="nav-link px-2 navText">Shopping cart</a></li>
+                        <li><a href="Accessoires.php" class="nav-link px-2 navText">Accessoirs</a></li>
+                        <li><a href="Nutrition.php" class="nav-link px-2 navText">Nutrition</a></li>
+                        <li><a href="checkout.php" class="nav-link px-2 navText">Shopping cart</a></li>
                     </ul>
 
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -212,7 +212,7 @@
             <footer class="py-5">
                 <div class="row">
                     <div class="col-6 col-md-2 mb-3">
-                        <h5>CPO: K. Monstein</h5>
+                        <h5>CEO: K. Monstein</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="mailto:k.monstein.inf20@stud.bbbaden.com?subject=Customer from Monkey Mall" class="nav-link p-0 text-muted">Email</a></li>
                             <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/kerim-monstein-79bb28239/" class="nav-link p-0 text-muted">LinkedIn</a></li>
@@ -220,7 +220,7 @@
                     </div>
 
                     <div class="col-6 col-md-2 mb-3">
-                        <h5>Kerim: O. Much</h5>
+                        <h5>CEO: O. Much</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="mailto:o.much.inf20@stud.bbbaden.com?subject=Customer from Monkey Mall" class="nav-link p-0 text-muted">Email</a></li>
                             <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/oliver-much-6ba264239/" class="nav-link p-0 text-muted">LinkedIn</a></li>
@@ -228,7 +228,7 @@
                     </div>
 
                     <div class="col-6 col-md-2 mb-3">
-                        <h5>Chief Keef: M. Saugy</h5>
+                        <h5>CEO: M. Saugy</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="mailto:m.saugy.inf20@stud.bbbaden.com?subject=Customer from Monkey Mall" class="nav-link p-0 text-muted">Email</a></li>
                             <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/michael-saugy-818a6123a/" class="nav-link p-0 text-muted">LinkedIn</a></li>
@@ -258,29 +258,8 @@
 
 
     <?php
+
     
-    //Login
-    $emailL = $_REQUEST['emailL'];
-    $pwL = $_REQUEST['pwL'];
-
-    $sql = "SELECT pw FROM customer WHERE email like '$emailL'";
-    $result = mysqli_query($conn, $sql);
-    while ($row = mysqli_fetch_assoc($result)) {
-        $dbPassword = $row['pw'];
-    }
-
-    echo "<script>console.log(' $dbPassword ');</script>";
-
-    if ($pwL == $dbPassword) {
-        echo "<script>console.log('Logged-in');</script>";
-        echo "<script>console.log('$pwL');</script>";
-        //Log in stuff here
-
-    } else {
-        echo "<script>console.log('wrong data!');</script>";
-        echo "<script>console.log(' $_REQUEST[emailL] ');</script>";
-        echo "<script>console.log(' $_REQUEST[pwL] ');</script>";
-    }
 
     
     //Registration
@@ -310,6 +289,28 @@
         echo "<script>console.log('Einigefüggt: $_REQUEST[name]', '$_REQUEST[prename]', '$_REQUEST[email]', '$_REQUEST[pw]');</script>";
     }
 
+    //Login
+    $emailL = $_REQUEST['emailL'];
+    $pwL = $_REQUEST['pwL'];
+
+    $sql = "SELECT pw FROM customer WHERE email like '$emailL'";
+    $result = mysqli_query($conn, $sql);
+    while ($row = mysqli_fetch_assoc($result)) {
+        $dbPassword = $row['pw'];
+    }
+
+    echo "<script>console.log(' $dbPassword ');</script>";
+
+    if ($pwL == $dbPassword) {
+        echo "<script>console.log('Logged-in');</script>";
+        echo "<script>console.log('$pwL');</script>";
+        //Log in stuff here
+
+    } else {
+        echo "<script>console.log('wrong data!');</script>";
+        echo "<script>console.log(' $_REQUEST[emailL] ');</script>";
+        echo "<script>console.log(' $_REQUEST[pwL] ');</script>";
+    }
 
     ?>
 

@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>MM: Accessoirs</title>
+    <title>MM: Equipment</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
     <script src=https://code.jquery.com/jquery-3.3.1.js></script>

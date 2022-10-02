@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>MM: Accessoirs</title>
+    <title>MM: Nutrition</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
     <script src=https://code.jquery.com/jquery-3.3.1.js></script>
@@ -97,7 +97,7 @@
         <section class="py-2 text-center container">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Equipment</h1>
+                    <h1 class="fw-light">Nutrition</h1>
                 </div>
             </div>
         </section>

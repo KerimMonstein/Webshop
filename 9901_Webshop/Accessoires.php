@@ -97,7 +97,7 @@
         <section class="py-2 text-center container">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Equipment</h1>
+                    <h1 class="fw-light">Accesoires</h1>
                 </div>
             </div>
         </section>
